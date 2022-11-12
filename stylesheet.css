@@ -245,6 +245,7 @@ a {
   text-align: left;
   font-size: 32px;
   font-weight: 500;
+  margin-left: 10px;
 }
 
 .my-work {
@@ -268,7 +269,7 @@ a {
 }
 
 .holdtext {
-  width: 320px;
+  width: 340px;
   color: #dcdce8;
   font-size: 25px;
 }
@@ -298,9 +299,21 @@ a {
   height: 24px;
   background-color: #7d73fc;
   margin-top: 20px;
+  margin-left: 0.00001px;
   line-height: 24px;
   text-align: center;
   padding: 12px;
+}
+
+.seep {
+  align-self: flex-start;
+  padding-left: 0.000px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.seep a {
+  margin-left: 10px;
 }
 
 .seeproject:active {
