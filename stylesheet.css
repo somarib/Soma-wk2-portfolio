@@ -937,4 +937,9 @@ a {
   .myform button.dsk:enabled {
     background-color: #7d73fc;
   }
+
+  .click-me {
+    width: 50%;
+    animation: 3s infinite alternate slidein;
+  }
 }
