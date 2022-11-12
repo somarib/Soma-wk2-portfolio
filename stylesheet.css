@@ -307,7 +307,6 @@ a {
 
 .seep {
   align-self: flex-start;
-  padding-left: 0.000px;
   display: flex;
   justify-content: flex-start;
 }
