@@ -937,4 +937,21 @@ a {
   .myform button.dsk:enabled {
     background-color: #7d73fc;
   }
+
+  .click-me {
+    width: 50%;
+    animation: 3s infinite alternate slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }
