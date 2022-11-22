@@ -449,6 +449,34 @@ a {
   display: none;
 }
 
+/* menu */
+
+.header-section-mbm {
+  position: fixed;
+  top: 0.0001px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 375px;
+  height: 812px;
+  background-image: url("image/shapes-mobile-menu.png");
+  background-repeat: no-repeat;
+  background-size: 375px 563px;
+  background-color: #191765;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.header-inner-cont-mbm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 375px;
+  min-height: 812px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-color: #e5e5e5;
