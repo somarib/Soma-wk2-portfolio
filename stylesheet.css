@@ -5,6 +5,10 @@ body {
   margin: auto;
 }
 
+.flex {
+  display: flex;
+}
+
 .outer-maincont {
   margin: auto;
   background-color: #191765;
@@ -26,14 +30,13 @@ body {
 }
 
 .upper-bar {
-  display: flex;
   justify-content: space-between;
   width: 375px;
   height: 44px;
 }
 
 .lower-bar {
-  display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   width: 375px;
@@ -62,7 +65,6 @@ body {
 }
 
 .header-section {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -75,7 +77,6 @@ body {
 }
 
 .header-inner-cont {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -109,13 +110,12 @@ body {
   width: 327px;
   height: 170px;
   font-size: 20px;
-  font-weight: 400px;
-  color: c8c8d4;
+  font-weight: 400;
+  color: #c8c8d4;
   text-align: center;
 }
 
 .proficiency {
-  display: flex;
   flex-wrap: wrap;
   width: 304px;
   min-height: 462px;
@@ -140,7 +140,6 @@ body {
 }
 
 .ppf-head {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -156,7 +155,6 @@ body {
 }
 
 .social {
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -177,7 +175,6 @@ hr {
 }
 
 .ul-work {
-  display: flex;
   justify-content: space-around;
   align-items: center;
   width: 65px;
@@ -206,7 +203,6 @@ a {
 }
 
 .work-list-article {
-  display: flex;
   flex-direction: column;
   width: 375px;
   min-height: 2600px;
@@ -219,7 +215,6 @@ a {
 .display-project2,
 .display-project3,
 .display-project4 {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -233,7 +228,6 @@ a {
 }
 
 .project-text-nav {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -275,7 +269,6 @@ a {
 }
 
 .navlang-flex {
-  display: flex;
   width: 350px;
 }
 
@@ -334,7 +327,6 @@ a {
 
 .contact-section,
 .foota {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -357,7 +349,7 @@ a {
   height: 105px;
   font-size: 17px;
   font-weight: 400;
-  color: f5f5ff;
+  color: #f5f5ff;
   line-height: 24px;
   text-align: center;
   margin-bottom: 15px;
@@ -368,7 +360,6 @@ a {
 }
 
 .myform {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -449,11 +440,87 @@ a {
   display: none;
 }
 
+/* menu */
+
+.header-section-mbm {
+  position: fixed;
+  top: 0.0001px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 375px;
+  height: 812px;
+  background-image: url("image/shapes-mobile-menu.png");
+  background-repeat: no-repeat;
+  background-size: 375px 563px;
+  background-color: #191765;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.header-inner-cont-mbm {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 375px;
+  min-height: 812px;
+}
+
+.cncel-cont {
+  width: 375px;
+  height: 92px;
+}
+
+.cncel {
+  justify-content: end;
+  width: 350px;
+  height: 48px;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+
+.mblist-cont {
+  width: 327px;
+  height: 184px;
+  margin: auto;
+}
+
+.mbmenu-ul {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 327px;
+  height: 80px;
+}
+
+.mbm-list-item {
+  display: block;
+  width: 300px;
+}
+
+.mbmenu-ul li a {
+  width: 327px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.li-span {
+  display: inline-block;
+  width: 300px;
+}
+
+.mbmenu-hide-show {
+  display: none;
+  top: 0.001px;
+  height: 100vh;
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-color: #e5e5e5;
     background-image: url("image/Topcircles.png");
-    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,;
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: auto;
   }
 
@@ -485,6 +552,7 @@ a {
   }
 
   .lower-bar {
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -571,7 +639,7 @@ a {
     width: 43%;
     height: 170px;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #b3bac5;
     text-align: center;
     margin-top: 10px;
@@ -658,7 +726,7 @@ a {
     align-items: center;
     width: 65px;
     height: 21.4px;
-    color: a2a3ae;
+    color: #a2a3ae;
   }
 
   .heed-menu {
@@ -958,5 +1026,19 @@ a {
       margin-left: 0%;
       width: 100%;
     }
+  }
+
+  .mbmenu-hide-show {
+    display: none;
+    height: 0.0001px;
+  }
+
+  #hide-show {
+    display: none;
+  }
+
+  .header-section-mbm {
+    display: none;
+    height: 0.001px;
   }
 }
