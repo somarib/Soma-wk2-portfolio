@@ -1039,4 +1039,18 @@ a {
       width: 100%;
     }
   }
+
+  .mbmenu-hide-show {
+    display: none;
+    height: 0.0001px;
+  }
+
+  #hide-show {
+    display: none;
+  }
+
+  .header-section-mbm {
+    display: none;
+    height: 0.001px;
+  }
 }
