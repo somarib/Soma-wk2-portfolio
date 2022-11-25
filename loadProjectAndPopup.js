@@ -293,11 +293,12 @@ livebutton.appendChild(livetextSpan);
       modalInnerContDiv.appendChild(liveSourceSection);
 
       article.appendChild(modalInnerContDiv);
-
-
             
         }
     }
-
-
 }
+
+let closeModal = () => {
+    document.querySelector('.modal-section-mbm').innerHTML = '';
+    document.getElementById('mb-modal-hide-show').style.display = 'none';
+  };
