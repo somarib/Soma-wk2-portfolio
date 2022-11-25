@@ -302,3 +302,16 @@ let closeModal = () => {
     document.querySelector('.modal-section-mbm').innerHTML = '';
     document.getElementById('mb-modal-hide-show').style.display = 'none';
   };
+
+  let addClickEventToSeeproject = () => {
+    document.querySelectorAll('.seeproject').forEach((item) => {
+      item.addEventListener('click', () => {
+        alert('clicked');
+        if (true) {
+          const { id } = item;
+          popUp(id);
+          document.getElementById('mb-modal-hide-show').style.display = 'block';
+        }
+      });
+    });
+  };
