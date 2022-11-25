@@ -92,6 +92,15 @@ const createProject = () => {
     placeholderdiv.appendChild(placeholderparagraph);
     projectsection.appendChild(placeholderdiv);
 
+    const projecttextnavdiv = document.createElement('div');
+    projecttextnavdiv.className = 'project-text-nav flex';
+    const h2 = document.createElement('h2');
+    h2.className = 'hh2';
+    h2.innerHTML = projectArray[i].Name;
+    const projectparagraph = document.createElement('p');
+    projectparagraph.className = 'flex-item holdtext';
+    projectparagraph.innerHTML = projectArray[i].Description;
+
     }
 
 
