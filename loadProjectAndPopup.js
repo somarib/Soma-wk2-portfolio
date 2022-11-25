@@ -78,7 +78,20 @@ const createProject = () => {
     div.appendChild(section);
 
     for (let i = 0; i < projectArray.length; i++) {
-        
+        const projectsection = document.createElement('section');
+    projectsection.className = projectArray[i].ID + ' flex';
+
+    const placeholderdiv = document.createElement('div');
+    placeholderdiv.className = 'placeholder-div';
+    const placeholderparagraph = document.createElement('p');
+    const placeholderimg = document.createElement('img');
+    placeholderimg.src = 'image/Img-Placeholder.png';
+    placeholderimg.alt = 'image of project';
+    placeholderimg.className = 'ph-image';
+    placeholderparagraph.appendChild(placeholderimg);
+    placeholderdiv.appendChild(placeholderparagraph);
+    projectsection.appendChild(placeholderdiv);
+
     }
 
 
