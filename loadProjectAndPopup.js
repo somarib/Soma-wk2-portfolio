@@ -178,32 +178,62 @@ const popUp = (id) => {
             modalCncelContDiv.appendChild(textDiv);
             modalCncelContDiv.appendChild(cancelDiv);
             modalHeaderSection.appendChild(modalCncelContDiv);
-            
+
             //Img section
-                  const imgSection = document.createElement('section');
-      imgSection.className = 'modal-image-section';
-      const imgDiv = document.createElement('div');
-      imgDiv.className = 'modal-image-cont';
-      const spanMobileImage = document.createElement('span');
-      spanMobileImage.classList = 'modal-mobile-project-image';
-      spanMobileImage.id = 'show-prooject-image-mobile';
-      const projectImg = document.createElement('img');
-      projectImg.src = 'image/modal-mobile-Snapshoot-Portfolio .png';
-      projectImg.alt = 'project image';
-      spanMobileImage.appendChild(projectImg);
-      imgDiv.appendChild(spanMobileImage);
+            const imgSection = document.createElement('section');
+            imgSection.className = 'modal-image-section';
+            const imgDiv = document.createElement('div');
+            imgDiv.className = 'modal-image-cont';
+            const spanMobileImage = document.createElement('span');
+            spanMobileImage.classList = 'modal-mobile-project-image';
+            spanMobileImage.id = 'show-prooject-image-mobile';
+            const projectImg = document.createElement('img');
+            projectImg.src = 'image/modal-mobile-Snapshoot-Portfolio .png';
+            projectImg.alt = 'project image';
+            spanMobileImage.appendChild(projectImg);
+            imgDiv.appendChild(spanMobileImage);
             const spanDesktopImage = document.createElement('span');
-      spanDesktopImage.classList = 'modal-desktop-project-image';
-      spanDesktopImage.id = 'show-prooject-image-desktop';
-      const projectDesktopImg = document.createElement('img');
-      projectDesktopImg.classList = 'desktop-project-image';
-      projectDesktopImg.src = 'image/modal-dktp-Snapshoot-Portfolio.png';
-      projectDesktopImg.alt = 'project image';
-      spanDesktopImage.appendChild(projectDesktopImg);
-      imgDiv.appendChild(spanDesktopImage);
-      imgSection.appendChild(imgDiv);
+            spanDesktopImage.classList = 'modal-desktop-project-image';
+            spanDesktopImage.id = 'show-prooject-image-desktop';
+            const projectDesktopImg = document.createElement('img');
+            projectDesktopImg.classList = 'desktop-project-image';
+            projectDesktopImg.src = 'image/modal-dktp-Snapshoot-Portfolio.png';
+            projectDesktopImg.alt = 'project image';
+            spanDesktopImage.appendChild(projectDesktopImg);
+            imgDiv.appendChild(spanDesktopImage);
+            imgSection.appendChild(imgDiv);
 
+            // Project description Section
+      const descriptionSection = document.createElement('section');
+      descriptionSection.className = 'modal-project-description-section';
 
+      const descriptionDiv = document.createElement('div');
+      descriptionDiv.className = 'modal-description';
+      const descriptionP = document.createElement('p');
+      descriptionP.innerHTML = projectArray[i].Description;
+
+      descriptionDiv.appendChild(descriptionP);
+
+      const techDiv = document.createElement('div');
+      techDiv.className = 'modal-tech';
+      const ul = document.createElement('ul');
+      ul.className = 'modal-tech-ul';
+
+      const modalTech = ['html', 'Ruby', 'css'];
+      for (let i = 0; i < modalTech.length; i ++) {
+        const li = document.createElement('li');
+        const lia = document.createElement('a');
+        lia.href = '#';
+        lia.innerHTML = modalTech[i];
+        li.appendChild(lia);
+        ul.appendChild(li);
+      }
+      techDiv.appendChild(ul);
+
+      descriptionSection.appendChild(descriptionDiv);
+      descriptionSection.appendChild(techDiv);
+
+            
         }
     }
 
