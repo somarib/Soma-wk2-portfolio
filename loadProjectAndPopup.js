@@ -232,6 +232,33 @@ const popUp = (id) => {
 
       descriptionSection.appendChild(descriptionDiv);
       descriptionSection.appendChild(techDiv);
+            
+            // Live and Source Section
+      const liveSourceSection = document.createElement('section');
+      liveSourceSection.className = 'live-and-source-section';
+
+      const liveSourceContDiv = document.createElement('div');
+      liveSourceContDiv.className = 'live-and-source-cont';
+
+      const livedemoDiv = document.createElement('div');
+      livedemoDiv.className = 'live-demo';
+      const livebutton = document.createElement('button');
+      livebutton.className = 'btn-live';
+      const livetextSpan = 
+livebutton.appendChild(livetextSpan);
+      livebutton.appendChild(liveimgSpan);
+
+      const anchbtnLive = document.createElement('a');
+      anchbtnLive.classList = 'btn-live-a';
+      anchbtnLive.href = projectArray[i].See_Live;
+
+      anchbtnLive.appendChild(livebutton);
+
+      livedemoDiv.appendChild(anchbtnLive);
+
+      const sourcecodeDiv = document.createElement('div');
+      sourcecodeDiv.className = 'source-code';
+
 
             
         }
