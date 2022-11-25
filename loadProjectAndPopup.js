@@ -149,5 +149,37 @@ const popUp = (id) => {
     const modalInnerContDiv = document.createElement('div');
     modalInnerContDiv.className = 'modal-inner-cont-mbm';
 
+    for (let i = 0; i < projectArray.length; i++) {
+        if (projectArray[i].ID === id) {
+
+
+            // Head Section
+            const modalHeaderSection = document.createElement('section');
+            modalHeaderSection.className = 'modal-header-section';
+            const modalCncelContDiv = document.createElement('div');
+            modalCncelContDiv.className = 'modal-cncel-cont';
+            const textDiv = document.createElement('div');
+            textDiv.className = 'modal-header-text';
+            const h1 = document.createElement('h1');
+            h1.innerHTML = `Multi-Post Story for: ${projectArray[i].ID}`;
+            textDiv.appendChild(h1);
+            const cancelDiv = document.createElement('div');
+            cancelDiv.className = 'modal-cncel';
+            const cancela = document.createElement('a');
+            cancela.className = 'mbmenu-li-a';
+            cancela.addEventListener('click', closeModal);
+            const cancelImg = document.createElement('img');
+            cancelImg.className = 'mbmenu-li-a';
+            cancelImg.src = 'image/close-Icon.png';
+            cancelImg.alt = 'close icon';
+            cancelImg.id = 'button';
+            cancela.appendChild(cancelImg);
+            cancelDiv.appendChild(cancela);
+            modalCncelContDiv.appendChild(textDiv);
+            modalCncelContDiv.appendChild(cancelDiv);
+            modalHeaderSection.appendChild(modalCncelContDiv);
+        }
+    }
+
 
 }
