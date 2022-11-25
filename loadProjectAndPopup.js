@@ -137,6 +137,7 @@ const createProject = () => {
 
 
     }
+    addClickEventToSeeproject();
 
 
 
