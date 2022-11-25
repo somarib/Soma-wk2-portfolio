@@ -54,5 +54,9 @@ const projectArray = [
     Technologies: ['CSS', 'html', 'bootstrap', 'Ruby'],
     See_Live: 'https://somarib.github.io/',
     See_Source: 'https://github.com/somarib/Soma-wk2-portfolio',
-  },
+  }
 ];
+
+const createProject = () => {
+    
+}
