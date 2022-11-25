@@ -77,6 +77,10 @@ const createProject = () => {
     div = document.querySelector('.wl-inner-cont');
     div.appendChild(section);
 
-    
+    for (let i = 0; i < projectArray.length; i++) {
+        
+    }
+
+
 
 }
