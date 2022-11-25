@@ -516,6 +516,164 @@ a {
   width: 100%;
 }
 
+/* pop Up */
+
+.mb-modal-hide-show {
+  display: none;
+}
+
+.p-modal-desktop-description {
+  display: none;
+}
+
+.modal-section-mbm {
+  position: fixed;
+  max-height: calc(100vh - 0.0001px);
+  overflow-y: auto;
+  top: 0.0001px;
+  width: 375px;
+  height: 850px;
+  background-color: #a2a3ae;
+  margin: auto;
+}
+
+.modal-inner-cont-mbm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 327px;
+  height: 800px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.modal-header-section {
+  width: 278px;
+  height: 58px;
+  margin-top: 25px;
+}
+
+.modal-cncel-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 278px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal-header-text {
+  padding: 0.0001px;
+}
+
+h1 {
+  margin: 15px 0;
+}
+
+.modal-cncel {
+  border: 1px solid blue;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.modal-image-cont {
+  width: 278px;
+  height: 181px;
+  margin-top: 24px;
+}
+
+.modal-project-description-section {
+  width: 278px;
+  height: 289px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.modal-tech {
+  width: 245px;
+  height: 41px;
+  margin: auto;
+}
+
+.modal-tech ul {
+  display: flex;
+  justify-content: space-around;
+  width: 245px;
+  height: 41px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 0.0001px;
+  margin: auto;
+}
+
+.modal-tech li {
+  list-style: none;
+  width: 60px;
+  line-height: 41px;
+  border-left: 1px solid #81818c;
+  border-right: 1px solid #81818c;
+}
+
+.modal-tech li:nth-child(2) {
+  width: auto;
+  border: none;
+}
+
+.live-and-source-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  height: 120px;
+  margin-top: 24px;
+}
+
+.btn-live,
+.btn-source {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 108px;
+  height: 48px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 24px;
+  border: none;
+  background: #7d73fc;
+  padding: 0.0001px 0.0001px;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.span-live-text {
+  display: inline-block;
+}
+
+.span-live-image {
+  display: inline-block;
+  height: auto;
+  padding-top: 5px;
+}
+
+.btn-source {
+  width: 124px;
+  height: 48px;
+  margin-bottom: 0.0001px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.modal-desktop-project-image {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-color: #e5e5e5;
