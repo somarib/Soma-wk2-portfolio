@@ -275,6 +275,25 @@ livebutton.appendChild(livetextSpan);
       anchbtnSource.classList = 'btn-source-a';
       anchbtnSource.href = projectArray[i].See_Source;
 
+      sourcebutton.appendChild(sourcetextSpan);
+      sourcebutton.appendChild(sourceimgSpan);
+
+      anchbtnSource.appendChild(sourcebutton);
+
+      sourcecodeDiv.appendChild(anchbtnSource);
+
+      liveSourceContDiv.appendChild(livedemoDiv);
+      liveSourceContDiv.appendChild(sourcecodeDiv);
+
+      liveSourceSection.appendChild(liveSourceContDiv);
+
+      modalInnerContDiv.appendChild(modalHeaderSection);
+      modalInnerContDiv.appendChild(imgSection);
+      modalInnerContDiv.appendChild(descriptionSection);
+      modalInnerContDiv.appendChild(liveSourceSection);
+
+      article.appendChild(modalInnerContDiv);
+
 
             
         }
