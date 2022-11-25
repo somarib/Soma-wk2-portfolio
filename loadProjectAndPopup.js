@@ -100,6 +100,23 @@ const createProject = () => {
     const projectparagraph = document.createElement('p');
     projectparagraph.className = 'flex-item holdtext';
     projectparagraph.innerHTML = projectArray[i].Description;
+        
+     const ul = document.createElement('ul');
+    ul.className = 'flex-item navlang-flex flex';
+    ul.id = 'pn_flex';
+    let a = document.createElement('a');
+    let li = document.createElement('li');
+    const tech = ['CSS', 'html', 'bootstrap', 'Ruby'];
+    for (let i = 0; i < tech.length; i++) {
+      a = document.createElement('a');
+      a.href = '#';
+      a.className = 'subflex-item artag';
+      a.innerHTML = tech[i];
+      li = document.createElement('li');
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+
 
     }
 
