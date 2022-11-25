@@ -317,6 +317,7 @@ a {
 }
 
 .seeproject:hover {
+  cursor: pointer;
   background-color: #7d73fc;
   box-shadow: 1px 8px 16px;
 }
@@ -964,6 +965,33 @@ button:hover {
     width: 100%;
   }
 
+  .navlang-flex li {
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #81818c;
+  }
+
+  .navlang-flex:nth-child(4) {
+    border-right: none;
+  }
+
+  .show-btn:active {
+    background-color: #5e42d7;
+  }
+
+  .show-btn:disabled {
+    background-color: #2a2b33;
+  }
+
+  .show-btn:hover {
+    background-color: #7d73fc;
+    box-shadow: 1px 8px 16px;
+  }
+
+  .show-btn:enabled {
+    background-color: #7d73fc;
+  }
+
   .subflex-item {
     height: 30px;
     text-align: center;
@@ -1001,11 +1029,6 @@ button:hover {
     padding-left: 10px;
     padding-right: 10px;
     display: grid;
-  }
-
-  .navlang-flex li {
-    display: inline-block;
-    width: 100%;
   }
 
   .seeproject {
