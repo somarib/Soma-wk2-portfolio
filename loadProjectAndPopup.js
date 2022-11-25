@@ -117,6 +117,24 @@ const createProject = () => {
       ul.appendChild(li);
     }
 
+    const seeprojectul = document.createElement('ul');
+    seeprojectul.className = 'seep';
+    const seeprojectli = document.createElement('li');
+    const seeprojecta = document.createElement('a');
+    seeprojecta.classList = 'subflex-item seeproject';
+    seeprojecta.id = projectArray[i].ID;
+    seeprojecta.innerHTML = 'See Project';
+    seeprojectli.appendChild(seeprojecta);
+    seeprojectul.appendChild(seeprojectli);
+
+    projecttextnavdiv.appendChild(h2);
+    projecttextnavdiv.appendChild(projectparagraph);
+    projecttextnavdiv.appendChild(ul);
+    projecttextnavdiv.appendChild(seeprojectul);
+    projectsection.appendChild(projecttextnavdiv);
+
+    document.querySelector('.wl-inner-cont').appendChild(projectsection);
+
 
     }
 
