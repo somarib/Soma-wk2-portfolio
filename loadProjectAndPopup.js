@@ -142,3 +142,8 @@ const createProject = () => {
 
 
 }
+
+const popUp = (id) => {
+    
+
+}
