@@ -144,6 +144,10 @@ const createProject = () => {
 }
 
 const popUp = (id) => {
-    
+    let article = document.createElement('article');
+    article = document.querySelector('.modal-section-mbm');
+    const modalInnerContDiv = document.createElement('div');
+    modalInnerContDiv.className = 'modal-inner-cont-mbm';
+
 
 }
