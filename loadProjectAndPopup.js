@@ -315,3 +315,8 @@ let closeModal = () => {
       });
     });
   };
+
+  window.onload = () => {
+    createProject();
+    window.scroll(0);
+  };
