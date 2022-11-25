@@ -1199,4 +1199,137 @@ button:hover {
     display: none;
     height: 0.001px;
   }
+
+  /* pop up */
+
+  .mb-modal-hide-show {
+    display: none;
+  }
+
+  .modal-mobile-project-image {
+    display: none;
+  }
+
+  .p-modal-desktop-description {
+    display: inline-block;
+  }
+
+  .p-modal-mobile-description {
+    display: none;
+  }
+
+  .modal-section-mbm {
+    position: fixed;
+    max-height: calc(100vh - 0.0001px);
+    overflow-y: auto;
+    top: 0.0001px;
+    width: 100%;
+    background-color: #191765;
+    background-image: url(image/modal-dsktp-bg-image-Group-68.png);
+    padding-top: 20px;
+    border: 1px solid red;
+  }
+
+  .modal-inner-cont-mbm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-height: 1190px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .modal-header-section {
+    width: 90%;
+    height: 58px;
+    border: 1px solid red;
+    margin-top: 25px;
+  }
+
+  .modal-cncel-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .modal-image-section {
+    width: 90%;
+    height: 505px;
+    margin: auto;
+  }
+
+  .modal-image-cont {
+    width: 100%;
+    height: 505px;
+    margin-top: 24px;
+  }
+
+  .modal-desktop-project-image {
+    display: inline-block;
+  }
+
+  .desktop-project-image {
+    width: 100%;
+    height: 505px;
+  }
+
+  .modal-project-description-section {
+    width: 63%;
+    height: auto;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .modal-tech {
+    width: 60%;
+    height: 41px;
+    margin: auto;
+  }
+
+  .modal-tech ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 41px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 0.0001px;
+    margin: auto;
+  }
+
+  .modal-tech li {
+    list-style: none;
+    width: 25%;
+    line-height: 41px;
+    border-left: 1px solid #81818c;
+    border-right: 1px solid #81818c;
+  }
+
+  .modal-tech li:nth-child(2) {
+    width: auto;
+    border: none;
+  }
+
+  .live-and-source-section {
+    width: 45%;
+    margin: auto;
+  }
+
+  .live-and-source-cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 24px;
+    border: 1px solid palevioletred;
+  }
 }
