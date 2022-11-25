@@ -58,5 +58,9 @@ const projectArray = [
 ];
 
 const createProject = () => {
-    
+    const article = document.querySelector('#work-list-article');
+    let div = document.createElement('div');
+    div.className = 'wl-inner-cont';
+    article.appendChild(div);
+
 }
