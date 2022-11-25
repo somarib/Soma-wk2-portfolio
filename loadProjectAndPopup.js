@@ -259,6 +259,22 @@ livebutton.appendChild(livetextSpan);
       const sourcecodeDiv = document.createElement('div');
       sourcecodeDiv.className = 'source-code';
 
+      const sourcebutton = document.createElement('button');
+      sourcebutton.className = 'btn-source';
+      const sourcetextSpan = document.createElement('span');
+      sourcetextSpan.className = 'span-source-text';
+      sourcetextSpan.innerHTML = 'See Source';
+      const sourceimgSpan = document.createElement('span');
+      sourceimgSpan.className = 'span-source-image';
+      const sourceImg = document.createElement('img');
+      sourceImg.src = 'image/modal-dsktp-Icon -GitHub.png';
+      sourceImg.alt = 'source icon';
+      sourceimgSpan.appendChild(sourceImg);
+
+      const anchbtnSource = document.createElement('a');
+      anchbtnSource.classList = 'btn-source-a';
+      anchbtnSource.href = projectArray[i].See_Source;
+
 
             
         }
