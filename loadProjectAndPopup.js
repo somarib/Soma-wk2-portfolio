@@ -62,5 +62,13 @@ const createProject = () => {
     let div = document.createElement('div');
     div.className = 'wl-inner-cont';
     article.appendChild(div);
+    const h1 = document.createElement('h1');
+    h1.innerHTML = 'MY RECENT WORK';
+    h1.id = 'my-work';
+    h1.className = 'my-work';
+    const img = document.createElement('img');
+    img.src = 'image/work-divider.png';
+    img.className = 'img-workDivider';
+    img.alt = 'divider image';
 
 }
