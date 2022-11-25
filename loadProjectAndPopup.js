@@ -178,6 +178,32 @@ const popUp = (id) => {
             modalCncelContDiv.appendChild(textDiv);
             modalCncelContDiv.appendChild(cancelDiv);
             modalHeaderSection.appendChild(modalCncelContDiv);
+            
+            //Img section
+                  const imgSection = document.createElement('section');
+      imgSection.className = 'modal-image-section';
+      const imgDiv = document.createElement('div');
+      imgDiv.className = 'modal-image-cont';
+      const spanMobileImage = document.createElement('span');
+      spanMobileImage.classList = 'modal-mobile-project-image';
+      spanMobileImage.id = 'show-prooject-image-mobile';
+      const projectImg = document.createElement('img');
+      projectImg.src = 'image/modal-mobile-Snapshoot-Portfolio .png';
+      projectImg.alt = 'project image';
+      spanMobileImage.appendChild(projectImg);
+      imgDiv.appendChild(spanMobileImage);
+            const spanDesktopImage = document.createElement('span');
+      spanDesktopImage.classList = 'modal-desktop-project-image';
+      spanDesktopImage.id = 'show-prooject-image-desktop';
+      const projectDesktopImg = document.createElement('img');
+      projectDesktopImg.classList = 'desktop-project-image';
+      projectDesktopImg.src = 'image/modal-dktp-Snapshoot-Portfolio.png';
+      projectDesktopImg.alt = 'project image';
+      spanDesktopImage.appendChild(projectDesktopImg);
+      imgDiv.appendChild(spanDesktopImage);
+      imgSection.appendChild(imgDiv);
+
+
         }
     }
 
