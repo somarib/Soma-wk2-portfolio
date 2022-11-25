@@ -572,7 +572,6 @@ h1 {
 }
 
 .modal-cncel {
-  border: 1px solid blue;
   padding-top: 10px;
   margin-right: 10px;
 }
@@ -600,7 +599,7 @@ h1 {
   margin: auto;
 }
 
-.modal-tech ul {
+.modal-tech-ul {
   display: flex;
   justify-content: space-around;
   width: 245px;
@@ -611,7 +610,7 @@ h1 {
   margin: auto;
 }
 
-.modal-tech li {
+.modal-tech-ul li {
   list-style: none;
   width: 60px;
   line-height: 41px;
@@ -1250,7 +1249,6 @@ button:hover {
     background-color: #191765;
     background-image: url(image/modal-dsktp-bg-image-Group-68.png);
     padding-top: 20px;
-    border: 1px solid red;
   }
 
   .modal-inner-cont-mbm {
@@ -1266,7 +1264,6 @@ button:hover {
   .modal-header-section {
     width: 90%;
     height: 58px;
-    border: 1px solid red;
     margin-top: 25px;
   }
 
@@ -1353,6 +1350,5 @@ button:hover {
     width: 100%;
     height: 48px;
     margin-bottom: 24px;
-    border: 1px solid palevioletred;
   }
 }
