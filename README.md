@@ -126,6 +126,7 @@ To get a local copy up and running, follow these steps.
 8. Create the mobile version first
 9. Convert mobile version into a desktop by applying media querries on the mobile version
 10. Add the mobile menu for mobile devices
+11. Add the pop up for the projects
 
 ### Prerequisites
 
