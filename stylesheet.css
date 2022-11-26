@@ -406,6 +406,10 @@ a {
   margin-bottom: 25px;
 }
 
+.email-validation {
+  display: none;
+}
+
 .foota .social {
   padding-bottom: 1px;
   margin-bottom: 5px;

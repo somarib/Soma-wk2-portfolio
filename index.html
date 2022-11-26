@@ -179,8 +179,10 @@
                 <input type="text" maxlength="30" name="Name" required placeholder="Full Name">
                 <input type="email" name="Email" required placeholder="Email" id="email" class="inp-email">
                 <textarea maxlength="500" name="message" required placeholder="Enter You Message Here"></textarea>
-                <button type="submit" class="mmb">See Project</button>
-                <button type="submit" name="send" class="dsk">Send</button>
+                <button type="submit" class="mmb" onclick="emailValidation()">See Project</button>
+                <button type="submit" id="submit" name="send" class="dsk" onclick="emailValidation()">Send</button>
+
+                <p class="email-validation" id="error-message" ></p>
               </form>
               <img src="image/contact-bar.png" alt="horizontal bar" class="contact-image">
         </section>
@@ -208,5 +210,6 @@
   
     <script type="text/javascript" src="mobile-menu.js"></script>
     <script type="text/javascript" src="loadProjectAndPopUp.js"></script>
+    <script type="text/javascript" src="validationAndData.js"></script>
   </body>
 </html>
