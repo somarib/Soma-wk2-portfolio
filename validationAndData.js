@@ -27,4 +27,5 @@ myform.addEventListener('input', () => {
     email: email.value,
     message: message.value
   }
+  localStorage.setItem('userData', JSON.stringify(usersData));
 });
