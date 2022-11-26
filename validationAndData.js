@@ -20,3 +20,11 @@ const myform = document.querySelector('someform');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
+
+myform.addEventListener('input', () => {
+  const usersData = {
+    username: name.value,
+    email: email.value,
+    message: message.value
+  }
+});
