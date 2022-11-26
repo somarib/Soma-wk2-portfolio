@@ -14,3 +14,9 @@ const emailValidation = () => {
 };
 
 document.addEventListener('click', emailValidation());
+
+
+const myform = document.querySelector('someform');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
