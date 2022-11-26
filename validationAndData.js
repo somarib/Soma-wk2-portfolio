@@ -14,3 +14,22 @@ const emailValidation = () => {
 };
 
 document.addEventListener('click', emailValidation());
+
+const myform = document.querySelector('someform');
+const fullname = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+myform.addEventListener('input', () => {
+  const usersData = {
+    username: fullname.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(usersData));
+});
+
+const GetDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+fullname.value = GetDataFromLocalStorage.username;
+email.value = GetDataFromLocalStorage.email;
+message.value = GetDataFromLocalStorage.message;
