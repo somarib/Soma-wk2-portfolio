@@ -5,7 +5,6 @@ const emailValidation = () => {
     if (regExp.test(eemail)) {
       document.getElementById('error-message').innerHTML = '';
     } else {
-      alert(regExp.test(eemail));
       document.getElementById('error-message').innerHTML = 'Please enter the email in lower case';
       document.getElementById('error-message').style.color = 'red';
       document.getElementById('error-message').style.display = 'block';
